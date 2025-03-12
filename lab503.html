@@ -3,20 +3,81 @@
   <head>
     <title> My lab5 web page.</title>
   <style>
-  
+    body {width: 100%;}
+    #container {
+      width: 70%;
+      text align: left;
+      margin: 10px auto;
+    }
+    #photo {
+      background-color: #008B8B; 
+      margin-left: auto;
+      margin-right: 0;
+      float: right;
+      width: 170px;
+    }
+    #chrisphoto2 {
+      height: auto;
+      width: 140px;
+      border: 1px solid #ddd
+      border-radius: 50%;
+      padding: 5px; 
+      display: block;
+      margin: auto;
+    }
+    .caption {
+      font-size: 10px;
+      font-family: Broadway;
+      text-align: center;
+    }
+    p, td, li {
+      font-size: 20px;
+      font-family: Broadway;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Broadway;
+      background-color: #4169E1;
+    }
+    a {text decoration: none;}
+    a:link {background-color: #6f5ed2;}
+    a:visited {background-color: #6fb5d2;} 
+    a:hover {background color: #6fb5de;} 
+    #thingsIlove {
+    background-color: #20B2AA;
+    }
+    #education {
+    background-color: #6A5ACD;
+    }
+    #education1 {
+      widith: 100%;
+      font-family: Arial;
+      border-collapse: collapse;
+    }
+    #education1 th, #education td {
+      border: 1px solid #ddd;
+      padding: 8px; 
+    }
+    #education1 th {
+      font-family: Broadway;
+      background-color: #800000;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      color: White;
+    }
   </style> 
   </head> 
   <body>
     <div id = "container">
     <h1> My lab 5 web page: Hello! </h1> 
     <p> This is the fifth lab for GIS 3410; Web Mapping, from MSU Denver.</p> 
-    <h3> About me</h3>
+    <h3> About me:</h3>
 
     <div id = "photo"> 
-     <img src = "thumbnail_IMG_5186.jpg"/>
+     <img id = "chrisphoto2" src = "chrisphoto2.jpg"</img>
      <p class = "caption"> Christopher W. Stubbs </p>
-     <p class = "caption"> Photo by author </p> 
-     I studied at <a href = "https://www.msudenver.edu"> MSU Denver</a>.
+     <p class = "caption"> Photo by author </p>
+     <p class = "caption"> I studied at <a href = "https://www.msudenver.edu"> MSU Denver</a>.
     </div>
       
     <div id = "thingsIlove">
@@ -39,8 +100,8 @@
       </ul>
     </div> 
     
-    <h3>The School's where I recevied education include:</h3>
-    <table id = "education">
+    <h3>The School's where I recevied an education include:</h3>
+    <table id = "education1">
     <tr> 
       <th>Name</th>
       <th>Start Year</th>
