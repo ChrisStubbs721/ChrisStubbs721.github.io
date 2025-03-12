@@ -3,7 +3,68 @@
   <head>
     <title> My lab5 web page.</title>
   <style>
-  
+    body {width: 100%;}
+    #container {
+      width: 70%;
+      text align: left;
+      margin: 0px auto;
+    }
+    #photo {
+      background-color: #6fa1d2; 
+      margin-left: auto;
+      margin-right: 0;
+      float: right;
+      width: 200px;
+    }
+    #chrisphoto2 {
+      height: auto;
+      width: 150px;
+      border: 1px solid #ddd
+      border-radius: 50%;
+      padding: 5px; 
+      display: block;
+      margin: auto;
+    }
+    .caption {
+      font-size: 10px;
+      font-family: times;
+      text-align: center;
+    }
+    p, td, li {
+      font-size: 10px;
+      font-family: times;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: times;
+      background-color: #ff6347;
+    }
+    a {text decoration: none;}
+    a:link {background-color: #6f5ed2;}
+    a:visited {background-color: #6fb5d2;} 
+    a:hover {background color: #6fb5de;} 
+    #thingsIlove {
+    background-color: #00b5de;
+    }
+    #education {
+    background-color: #009843;
+    }
+    #education1 {
+      widith: 100%;
+      font-family: Arial;
+      border-collapse: collapse;
+    }
+    #education1 th, #education td {
+      border: 1px solid #ddd;
+      padding: 8px; 
+    }
+    #employment th {
+      font: black bold times;
+      background-color: #ff0000;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      color: white;
+    }
   </style> 
   </head> 
   <body>
@@ -13,7 +74,7 @@
     <h3> About me</h3>
 
     <div id = "photo"> 
-     <img src = "thumbnail_IMG_5186.jpg"/>
+     <img id = "chrisphoto2" src = "chrisphoto2.jpg" </img>
      <p class = "caption"> Christopher W. Stubbs </p>
      <p class = "caption"> Photo by author </p> 
      I studied at <a href = "https://www.msudenver.edu"> MSU Denver</a>.
@@ -40,7 +101,7 @@
     </div> 
     
     <h3>The School's where I recevied education include:</h3>
-    <table id = "education">
+    <table id = "education1">
     <tr> 
       <th>Name</th>
       <th>Start Year</th>
