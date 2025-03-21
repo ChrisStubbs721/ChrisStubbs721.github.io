@@ -7,18 +7,18 @@
     #container {
       width: 70%;
       text align: left;
-      margin: 0px auto;
+      margin: 10px auto;
     }
     #photo {
-      background-color: #6fa1d2; 
+      background-color: #008B8B; 
       margin-left: auto;
       margin-right: 0;
       float: right;
-      width: 200px;
+      width: 170px;
     }
     #chrisphoto2 {
       height: auto;
-      width: 150px;
+      width: 140px;
       border: 1px solid #ddd
       border-radius: 50%;
       padding: 5px; 
@@ -27,26 +27,26 @@
     }
     .caption {
       font-size: 10px;
-      font-family: times;
+      font-family: Broadway;
       text-align: center;
     }
     p, td, li {
-      font-size: 10px;
-      font-family: times;
+      font-size: 20px;
+      font-family: Broadway;
     }
     h1, h2, h3, h4, h5, h6 {
-      font-family: times;
-      background-color: #ff6347;
+      font-family: Broadway;
+      background-color: #4169E1;
     }
     a {text decoration: none;}
     a:link {background-color: #6f5ed2;}
     a:visited {background-color: #6fb5d2;} 
     a:hover {background color: #6fb5de;} 
     #thingsIlove {
-    background-color: #00b5de;
+    background-color: #20B2AA;
     }
     #education {
-    background-color: #009843;
+    background-color: #6A5ACD;
     }
     #education1 {
       widith: 100%;
@@ -58,25 +58,33 @@
       padding: 8px; 
     }
     #education1 th {
-      font: black bold times;
-      background-color: #DC143C; 
+      font-family: Broadway;
+      background-color: #800000;
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
-      color: white;
+      color: White;
     }
   </style> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script> 
+    $(doucment).ready(function(){
+      
+    });
+  </script>
+    
   </head> 
   <body>
     <div id = "container">
     <h1> My lab 6 web page: Hello! </h1> 
     <p> This is the sixth lab for GIS 3410; Web Mapping, from MSU Denver.</p> 
-    <h3> About me</h3>
+    <h3> About me:</h3>
 
     <div id = "photo"> 
-     <img id = "chrisphoto2" src = "chrisphoto2.jpg" </img>
+     <img id = "chrisphoto2" src = "chrisphoto2.jpg"</img>
      <p class = "caption"> Christopher W. Stubbs </p>
-     <p class = "caption"> Photo by author </p> 
+     <p class = "caption"> Photo by author </p>
      <p class = "caption"> I studied at <a href = "https://www.msudenver.edu"> MSU Denver</a>.
     </div>
       
@@ -129,4 +137,4 @@
     </table>
     </div> 
   </body> 
-</html> 
+</html>
