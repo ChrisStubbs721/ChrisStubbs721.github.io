@@ -1,7 +1,7 @@
 <DOCTYPE html> 
 <html>
   <head>
-    <title> My lab5 web page.</title>
+    <title> My lab6 web page.</title>
   <style>
     body {width: 100%;}
     #container {
@@ -65,12 +65,20 @@
       text-align: left;
       color: White;
     }
-  </style> 
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script> 
+    $(doucment).ready(function(){
+       
+    });
+  </script>
+    
   </head> 
   <body>
     <div id = "container">
-    <h1> My lab 5 web page: Hello! </h1> 
-    <p> This is the fifth lab for GIS 3410; Web Mapping, from MSU Denver.</p> 
+    <h1> My lab 6 web page: Hello! </h1> 
+    <p> This is the sixth lab for GIS 3410; Web Mapping, from MSU Denver.</p> 
     <h3> About me:</h3>
 
     <div id = "photo"> 
@@ -109,19 +117,19 @@
       <th>Position</th>
     </tr> 
     <tr>
-       <td>September School</td>
+       <td><button id="clicktoreveal1">September School</button></td>
        <td>2013</td>
        <td>2017</td>
        <td>Student</td>
     </tr>
     <tr>
-       <td>CCD</td>
+       <td><button id="clicktoreveal2">CCD</button></td>
        <td>2017</td>
        <td>2021</td>
        <td>Student</td>
     </tr>
     <tr>
-       <td>MSU Denver</td>
+       <td><button id="clicktoreveal3">MSU Denver</button></td>
        <td>2021</td>
        <td>Present</td>
        <td>Transfer Student</td>
