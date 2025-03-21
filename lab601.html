@@ -82,49 +82,26 @@
           $("#div_ctr1").html("September School");
         });
 
-        // do this when click on the clicktoreveal1 button
+        // do this when click on the clicktoreveal2 button
         $("#clicktoreveal2").click(function() {
           // run this when I click on this button
           console.log("clicked on the 2nd button");
           $("#div_ctr2").html("CCD");
         });
 
-        // do this when click on the clicktoreveal1 button
+        // do this when click on the clicktoreveal3 button
         $("#clicktoreveal3").click(function() {
           // run this when I click on this button
           console.log("clicked on the 3rd button");
           $("#div_ctr3").html("MSU Denver");
         });
-
+        // toggle the photo on and off
+        $("#togglethephoto").click(function() {
+          console.log("clicked on the toggle photo button");
+          $("#chrisphoto2").fadeToggle();
+        });
       });
     </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script> 
-    $(doucment).ready(function(){
-      // do this when click on the clicktoreveal1 button
-      $("#clicktoreveal1").click(function() {
-        // run this 
-        $("#div_ctr1").html("September School");
-      });
-
-      // do this when click on the clicktoreveal2 button
-      $("#clicktoreveal2").click(function() {
-        // if someone clicks on appear, this runs!
-        $("#div_ctr2").html("CCD");
-      });
-
-      // do this when click on the clicktoreveal3 button
-      $("#clicktoreveal3").click(function() {
-        // if someone clicks on appear, this runs!
-        $("#div_ctr13").html("MSU Denver");
-      });
-      // toggle the photo on and off
-      $("#togglethephoto").click(function() {
-      console.log("clicked on the toggle photo button");
-      $("#chrisphoto2").fadeToggle();
-      
-    });
-  </script>
     
   </head> 
   <body>
@@ -137,8 +114,8 @@
      <img id = "chrisphoto2" src = "chrisphoto2.jpg"</img>
      <p class = "caption"> Christopher W. Stubbs </p>
      <p class = "caption"> Photo by author </p>
-     <p class = "caption"> I studied at <a href = "https://www.msudenver.edu"> MSU Denver</a>.
-      <button id="togglethephoto">Toggle Photo to Show/Hide.</button>
+     <p class = "caption"> I studied at <a href = "https://www.msudenver.edu"> MSU Denver</a> </p>
+     <button id="togglethephoto">Toggle Photo to Show/Hide.</button>
     </div>
       
     <div id = "thingsIlove">
