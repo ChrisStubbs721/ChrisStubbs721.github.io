@@ -66,28 +66,28 @@
       color: White;
     }
   </style>
-
+\
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script> 
     $(doucment).ready(function() {
-      //do this on the clicktoreveal(1) button
-      $("#clicktoreveal(1)").click( function() {
+      // do this when click on the "button1" button
+      $("#button1").click(function() {
         // run this when I click on this button
-        $("#clicktoreveal(1)").html("September School");
+        $("#button1").html("September School");
       });
-
-      //do this on the clicktoreveal(2) button
-      $("#clicktoreveal(2)").click(function() {
+      
+      // do this when click on the "button2" button
+      $("#button2").click(function() {
         // run this when I click on this button
-        $("#clicktoreveal(2)").html("CCD");
+        $("#button2").html("CCD");
       });
-
-      //do this on the clicktoreveal(3) button
-      $("#clicktoreveal(3)").click(function() {
+      
+      // do this when click on the "button3" button
+      $("button3").click(function() {
         // run this when I click on this button
-        $("#clicktoreveal(3)").html("MSU Denver");
+        $("#button3").html("MSU Denver");
       });
-    });
+      });
   </script>
     
   </head> 
@@ -133,24 +133,21 @@
       <th>Position</th>
     </tr> 
     <tr>
-       <td><button id="clicktoreveal(1)">Click to reveal...</button></td>
+       <td><button id="button1">Click to reveal...</button></td>
        <td>2013</td>
        <td>2017</td>
        <td>Student</td>
     </tr>
     <tr>
-       <td><button id="clicktoreveal(2)">Click to reveal...</button></td>
+       <td><button id="button2">Click to reveal...</button></td>
        <td>2017</td>
        <td>2021</td>
        <td>Student</td>
     </tr>
     <tr>
-       <td><button id="clicktoreveal(3)">Click to reveal...</button></td>
+       <td><button id="button3">Click to reveal...</button></td>
        <td>2021</td>
        <td>Present</td>
        <td>Transfer Student</td>
     </tr>
     </table>
-    </div> 
-  </body> 
-</html> 
