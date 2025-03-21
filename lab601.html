@@ -1,24 +1,24 @@
 <DOCTYPE html> 
 <html>
   <head>
-    <title> My lab6 web page.</title>
+    <title> My lab5 web page.</title>
   <style>
     body {width: 100%;}
     #container {
       width: 70%;
       text align: left;
-      margin: 10px auto;
+      margin: 0px auto;
     }
     #photo {
-      background-color: #008B8B; 
+      background-color: #6fa1d2; 
       margin-left: auto;
       margin-right: 0;
       float: right;
-      width: 170px;
+      width: 200px;
     }
     #chrisphoto2 {
       height: auto;
-      width: 140px;
+      width: 150px;
       border: 1px solid #ddd
       border-radius: 50%;
       padding: 5px; 
@@ -27,26 +27,26 @@
     }
     .caption {
       font-size: 10px;
-      font-family: Broadway;
+      font-family: times;
       text-align: center;
     }
     p, td, li {
-      font-size: 20px;
-      font-family: Broadway;
+      font-size: 10px;
+      font-family: times;
     }
     h1, h2, h3, h4, h5, h6 {
-      font-family: Broadway;
-      background-color: #4169E1;
+      font-family: times;
+      background-color: #ff6347;
     }
     a {text decoration: none;}
     a:link {background-color: #6f5ed2;}
     a:visited {background-color: #6fb5d2;} 
     a:hover {background color: #6fb5de;} 
     #thingsIlove {
-    background-color: #20B2AA;
+    background-color: #00b5de;
     }
     #education {
-    background-color: #6A5ACD;
+    background-color: #009843;
     }
     #education1 {
       widith: 100%;
@@ -58,49 +58,25 @@
       padding: 8px; 
     }
     #education1 th {
-      font-family: Broadway;
-      background-color: #800000;
+      font: black bold times;
+      background-color: #DC143C; 
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
-      color: White;
+      color: white;
     }
-  </style>
-\
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script> 
-    $(doucment).ready(function() {
-      // do this when click on the "button1" button
-      $("#button1").click(function() {
-        // run this when I click on this button
-        $("#button1").html("September School");
-      });
-      
-      // do this when click on the "button2" button
-      $("#button2").click(function() {
-        // run this when I click on this button
-        $("#button2").html("CCD");
-      });
-      
-      // do this when click on the "button3" button
-      $("button3").click(function() {
-        // run this when I click on this button
-        $("#button3").html("MSU Denver");
-      });
-      });
-  </script>
-    
+  </style> 
   </head> 
   <body>
     <div id = "container">
-    <h1> My lab 6 web page: Hello! </h1> 
-    <p> This is the sixth lab for GIS 3410; Web Mapping, from MSU Denver.</p> 
-    <h3> About me:</h3>
+    <h1> My lab 5 web page: Hello! </h1> 
+    <p> This is the fifth lab for GIS 3410; Web Mapping, from MSU Denver.</p> 
+    <h3> About me</h3>
 
     <div id = "photo"> 
-     <img id = "chrisphoto2" src = "chrisphoto2.jpg"</img>
+     <img id = "chrisphoto2" src = "chrisphoto2.jpg" </img>
      <p class = "caption"> Christopher W. Stubbs </p>
-     <p class = "caption"> Photo by author </p>
+     <p class = "caption"> Photo by author </p> 
      <p class = "caption"> I studied at <a href = "https://www.msudenver.edu"> MSU Denver</a>.
     </div>
       
@@ -133,21 +109,24 @@
       <th>Position</th>
     </tr> 
     <tr>
-       <td><button id="button1">Click to reveal...</button></td>
+       <td>September School</td>
        <td>2013</td>
        <td>2017</td>
        <td>Student</td>
     </tr>
     <tr>
-       <td><button id="button2">Click to reveal...</button></td>
+       <td>CCD</td>
        <td>2017</td>
        <td>2021</td>
        <td>Student</td>
     </tr>
     <tr>
-       <td><button id="button3">Click to reveal...</button></td>
+       <td>MSU Denver</td>
        <td>2021</td>
        <td>Present</td>
        <td>Transfer Student</td>
     </tr>
     </table>
+    </div> 
+  </body> 
+</html> 
