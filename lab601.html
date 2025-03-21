@@ -67,25 +67,56 @@
     }
   </style> 
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#appear").click( function() {
+          // if someone clicks on appear, this runs!
+          console.log("someone clicked on button appear.");
+        });
+        console.log("started JavaScript");
+        // do this when click on the clicktoreveal1 button
+        $("#clicktoreveal1").click(function() {
+          // run this when I click on this button
+          console.log("clicked on the 1st button");
+          $("#div_ctr1").html("September School");
+        });
+
+        // do this when click on the clicktoreveal1 button
+        $("#clicktoreveal2").click(function() {
+          // run this when I click on this button
+          console.log("clicked on the 2nd button");
+          $("#div_ctr2").html("CCD");
+        });
+
+        // do this when click on the clicktoreveal1 button
+        $("#clicktoreveal3").click(function() {
+          // run this when I click on this button
+          console.log("clicked on the 3rd button");
+          $("#div_ctr3").html("MSU Denver");
+        });
+
+      });
+    </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script> 
     $(doucment).ready(function(){
       // do this when click on the clicktoreveal1 button
       $("#clicktoreveal1").click(function() {
-        // run this when I click on this button
-        $("#clicktoreveal1").html("September School");
+        // run this 
+        $("#div_ctr1").html("September School");
       });
 
       // do this when click on the clicktoreveal1 button
       $("#clicktoreveal2").click(function() {
-        // run this when I click on this button
-        $("#clicktoreveal2").html("CCD");
+        // if someone clicks on appear, this runs!
+        $("#div_ctr2").html("CCD");
       });
 
       // do this when click on the clicktoreveal1 button
       $("#clicktoreveal3").click(function() {
-        // run this when I click on this button
-        $("#clicktoreveal3").html("MSU Denver");
+        // if someone clicks on appear, this runs!
+        $("#div_ctr13").html("MSU Denver");
       });
     });
   </script>
@@ -133,19 +164,19 @@
       <th>Position</th>
     </tr> 
     <tr>
-       <td><button id="clicktoreveal1">Click to reveal...</button></td> 
+       <td><div id="div_ctr1"><button id="clicktoreveal1">Click to reveal...</button></div></td> 
        <td>2013</td>
        <td>2017</td>
        <td>Student</td>
     </tr>
     <tr>
-       <td><button id="clicktoreveal2">Click to reveal...</button></td>
+       <td><div id="div_ctr2"><button id="clicktoreveal2">Click to reveal...</button></div></td>
        <td>2017</td>
        <td>2021</td>
        <td>Student</td>
     </tr>
     <tr>
-       <td><button id="clicktoreveal3">Click to reveal...</button></td>
+       <td><div id="div_ctr3"><button id="clicktoreveal3">Click to reveal...</button></div></td>
        <td>2021</td>
        <td>Present</td>
        <td>Transfer Student</td>
