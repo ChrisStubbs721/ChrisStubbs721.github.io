@@ -18,8 +18,8 @@
     <script>
          $(document).ready( function() {
               // this is the secret word!
-              word =  "y o u r w o r d";
-              blank = "- - - - - - - -";
+              word =  "f a n t a s t i c";
+              blank = "- - - - - - - - -";
               $("#word").text(blank);
 
               // this is the list of letters that have been tried
@@ -39,12 +39,14 @@
                   // check if the game has been won or lost
                   if (gameWon != true && gameLost != true) {
                     // erase the info box
-
+                    $("#info").text("");
                 
                     // use text to get the letter that was clicked on
-
+                    letter - $(this).text();
+                    console.log("clicked on: ", letter)
 
                     // make a line through the letter
+                    $(this).css("text-decoration", "line-through");
 
                     // if the letter has already been clicked on, 
                     // let the user know it's already been tried
