@@ -51,16 +51,22 @@
                     // if the letter has already been clicked on, 
                     // let the user know it's already been tried
                     if (triedLetters.includes(letter)) {
+                      $("#info").text("Letter " + letter + "already tried.");
 
                     // if the letter isn't in the word, reduce
                     // the number of tries and check if they lost
                     } else if (! word.includes(letter)) {
 
                       // reduce the number of remaining tries by 1
-
+                       tried = tried - 1;
+                       $("#guesses").text("Mistakes, left: " + tried);
+                      
 
                       // are they out of tries? then they lost!
-
+                      if (tries < 1) {
+                       gameLost = true;
+                       $("#info").text("Sorry, you ran out of Guesses. You LOSE! Guess you don't have a theoretical degree in physics?");
+                      }
                     
                     
                     // otherwise, put a line through it and
@@ -72,14 +78,32 @@
                       // with the letter that was clicked on
                       // replace the blanks with letter in blank
                       // and replace the letters with blanks in word
-
+                      while (word.includes(letter)) {
+                        index = word.indexOf(letter);
+                        console.log("index of wors is " + index);
+                        word = word.substring(0, index) + " " + word.substring((index + 1))
+                        blank = blank.substring(0, index) + letter + blank.substring((index + 1))
+                        
+                        $("#word").text(blank);
+                        console.log("word is ", word);
+                        console.log("blank is ", blank);
+                      }
+                      
+                      
                      
                       // check if the player has won the game
+                      if (!blank.includes("-")) {
+                        gameWon = true;
+                        $("#info").text("You WON! I'm sure you'll do a great job getting HELIOS One up and running for the New California Republic! ...right?");
+                      }
 
 
                     }
 
                     // add the letter to letters already tried
+                    triedletters = triedletters + letter;
+                    console.log("triedletters is ", triedletters);
+                    console.log("word is" , word);
 
                   }
               });
