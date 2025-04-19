@@ -70,7 +70,7 @@
 
                 // define a function to style my choropleth map
 		function style1(feature) {
-		     d = feature.properties.OCCUPIED_HU;
+		     d = feature.properties.VACANT_HU;
                      answer = d > 30 ? '#6E016B' :
                               d > 20 ? '#88419D' :
                               d > 15 ? '#8C6BB1' :
@@ -96,7 +96,7 @@
 			acsDenver2021Layer = L.geoJSON(data,
 						      {style:style1,
 						       onEachFeature:function(feature, layer) {
-						           layer.bindPopup("Occupied Housing Units: " + feature.properties.OCCUPIED_HU + "%");
+						           layer.bindPopup("Vacant Housing Units: " + feature.properties.VACANT_HU + "%");
 						       }}).addTo(map);
 
 			// move the map to the area of the data
